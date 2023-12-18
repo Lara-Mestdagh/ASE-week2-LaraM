@@ -1,3 +1,4 @@
+// Define the namespace where the Person class is located.
 namespace Howest.MCT.Ex1.Models;
 public class Person
 {
@@ -8,7 +9,7 @@ public class Person
         LastName = lastname;
     }
 
-    public Person(string name, string lastname, byte age, List<string> addresses, List<string> emails, List<string> phones)
+    public Person(string name, string lastname, int age, List<string> addresses, List<string> emails, List<string> phones)
     {
         Name = name;
         LastName = lastname;
@@ -19,6 +20,7 @@ public class Person
     }
 
     // FUNCTIONS
+    // Override the ToString() method 
     public override string ToString()
     {
         // Build a string representation of the person's information
@@ -48,9 +50,8 @@ public class Person
     // PROPERTIES
     public string Name { get; set; }
     public string LastName { get; set; }
-    public byte Age { get; set; }
+    public int Age { get; set; }
     public List<string> Addresses { get; set; }
     public List<string> EmailAddresses  { get; set; }
     public List<string> PhoneNumbers  { get; set; }
-    
 }

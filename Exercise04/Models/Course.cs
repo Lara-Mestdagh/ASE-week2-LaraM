@@ -10,6 +10,7 @@ public class Course
     }
 
     // FUNCTIONS
+    // Override the ToString() method 
     public override string ToString()
     {
         // Build a string representation of the person's information
@@ -25,5 +26,4 @@ public class Course
     public int ID { get; set; }
     public string Name { get; set; }
     public int PricePerSemester { get; set; }
-
 }

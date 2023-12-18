@@ -10,6 +10,7 @@ public class Course
     }
 
     // FUNCTIONS
+    // Override the ToString() method 
     public override string ToString()
     {
         // Build a string representation of the person's information

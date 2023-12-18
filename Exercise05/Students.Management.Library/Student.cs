@@ -1,3 +1,4 @@
+// Define the namespace where the Student class is located. Also uses the Course class
 namespace MCT.Ex4.Models.Student;
 using MCT.Ex4.Models.Course;
 public class Student
@@ -13,6 +14,7 @@ public class Student
     }
 
     // FUNCTIONS
+    // Override the ToString() method 
     public override string ToString()
     {
         // Build a string representation of the person's information
@@ -28,6 +30,7 @@ public class Student
 
         return info;
     }
+    // Method to add a course to the student's class group.
     public void AddCourse(Course course)
     {
         if (ClassGroup == null)
@@ -37,6 +40,7 @@ public class Student
 
         ClassGroup.Add(course);
     }
+    // Method to calculate the total price of the courses in the class group.
     public string TotalPrice()
     {
         int totalPrice = 0;
@@ -55,5 +59,4 @@ public class Student
     public string Email { get; set; }
     public List<Course> ClassGroup { get; set; }
     public string DateOfBirth { get; set; }
-
 }
